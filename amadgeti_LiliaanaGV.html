@@ -1,0 +1,278 @@
+<html>
+<head>
+   <title>Ejemplo de menu: Menu horizontal</title>
+   <style>
+      body {
+         background-color: #ffffff;
+         width: 100%;
+         margin: 0;
+         height: 100%;
+         font-family: Georgia, serif;
+      }
+      /* ── menú ── */
+      .menu1 ul {
+         background-color: #870E1B;
+         margin: 0;
+         width: 125%;
+         padding: 10px;
+         list-style: none;
+      }
+      .menu1 li {
+         display: inline;
+         border-right: 1px solid #a16900;
+         color: #FFFFFF;
+         font-weight: 400;
+         padding: 10px;
+         cursor: pointer;
+      }
+      .menu1 li:hover {
+         background-color: #db155d;
+         border-right: 1px solid #db155d;
+         font-weight: 600;
+         text-decoration: underline;
+      }
+      .menu1 li.activo {
+         background-color: #db155d;
+         font-weight: 700;
+         text-decoration: underline;
+      }
+
+      /* ── contenido ── */
+      .seccion {
+         display: none;           /* ocultas */
+         padding: 40px 50px;
+         animation: fadeIn 0.3s ease;
+      }
+      .seccion.visible {
+         display: block;          /* se van a mostrar al hacer clic */
+      }
+      @keyframes fadeIn {
+         from { opacity: 0; transform: translateY(8px); }
+         to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .seccion h2 {
+         color: #870E1B;
+         border-bottom: 3px solid #870E1B;
+         padding-bottom: 25px;
+      }
+      .seccion p {
+         line-height: 1.7;
+         color: #333;
+         max-width: 1000px;
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- ── menú ── -->
+   <div class="menu1">
+      <ul>
+         <li onclick="mostrar('inicio')"          class="activo">Inicio</li>
+         <li onclick="mostrar('educacion')">Día mundial de la educación ambiental</li>
+         <li onclick="mostrar('ingenieria')">Día mundial de la ingeniería para el desarrollo sostenible</li>
+         <li onclick="mostrar('clima')">Día mundial del clima</li>
+         <li onclick="mostrar('ods')">ODS</li>
+         <li onclick="mostrar('tierra')">Día mundial de la tierra</li>
+         <li onclick="mostrar('reciclaje')">Día internacional del reciclaje</li>
+         <li onclick="mostrar('medioambiente')">Día mundial del medio ambiente</li>
+         <li onclick="mostrar('alumno')">Alumno</li>
+      </ul>
+   </div>
+
+   <!-- ── secciones ── -->
+   <!-- inicio -->
+   <div id="inicio" class="seccion visible">
+      <h2 style="text-align:center;">Hablemos sobre el programa <strong>AMADGETI</strong></h2><br>
+      <img src="https://cetis8rafaeldonde.edu.mx/wp-content/uploads/2020/12/amadegeti2.png" alt="Programa AMADGETI" width="400" style="float:right; margin-right:15px; margin-bottom:10px;">
+      <p><strong>Finalidad:</strong></p>
+      <p>Es un programa educativo-ambiental, que busca integrar la educación ambiental en la 
+         vida escolar y promover acciones sostenibles dentro y fuera de las instituciones educativas,
+         busca fomentar el desarrollo sustentable, orientado a despertar la conciencia en el cuidado
+         del medio ambiente por parte de la comunidad estudiantil...</p><br>
+      <p><strong>Inplrementación</strong></p>
+      <p>El programa DGETI AMA-DGETI comenzó a aparecer formalmente en planteles de CETis y CBTis al
+         menos desde 2021, según convocatorias y documentos escolares de la DGETI.</p>
+      <p>Sin embargo, la implementación más amplia y visible a nivel nacional en escuelas de educación
+         media superior de la DGETI se fortaleció durante los ciclos escolares 2023-2024, cuando se
+         publicaron cronogramas oficiales y actividades ambientales coordinadas en numerosos planteles del país.</p>
+      <p><strong>Reflexión personal e influencia del programa en nuestras vidas</strong></p>
+      <p>El conocer las fechas marcadas por el programa AMA-DGETI como el Día Mundial del Agua, el Día de la Tierra
+         o el Día Mundial del Medio Ambiente te da algo valioso: ritmo y propósito ambiental a lo largo del año.
+         En lugar de que el cuidado del medio ambiente sea una idea vaga que "algún día" pondrás en práctica, estas
+         fechas nos invitan a detenernos, reflexionar y actuar en momentos concretos. Son recordatorios colectivos que
+         te conectan con una causa más grande que tú mismo.</p>
+      <img src="https://cbtis117.edu.mx/wp-content/uploads/2023/07/FB_IMG_16897311446831.jpg" alt="Programa AMADGETI" width="400" style="float:right; margin-right:15px; margin-bottom:10px;">
+      <p>En tu vida cotidiana, ese calendario puede funcionar como una brújula: te recuerda que tus hábitos lo que
+         consumes, lo que desechas, cómo te mueves tienen consecuencia real en el planeta. Y cuando esa conciencia
+         se vuelve rutina, dejas de ser un espectador del problema y te conviertes en parte de la solución.</p>
+   </div>
+
+   <!-- educación ambiental -->
+   <div id="educacion" class="seccion">
+      <h2>Día Mundial de la Educación Ambiental</h2>
+      <p>Se celebra el <strong>26 de enero</strong> de cada año. Fue proclamado en el
+         Congreso Internacional de Educación Ambiental de Belgrado en 1975. Su objetivo es
+         fomentar la conciencia y los conocimientos necesarios para proteger el medio ambiente.</p>
+      <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMlOOi7GXGjqWB8quKMSv62Ks7AvyfsTq3DKWVHGoA1QRUQxfTajByII29xdfDl5-4D8m2N96HmnN1IP-QgzlkSkUixvrL8V9-DqmJtn6Y6c73xYw=w1920-h868?auditContext=forDisplay" alt="educación ambiental" width="400" style="float:right; margin-right:15px; margin-bottom:10px;">
+      <p><strong>A continiación podemos conocer más acerca de esta fecha:</strong></p>
+      <a href="https://view.genially.com/699606ced0ca653e5eb7b52f" target="_blank" style="color:#099723;">Visita información sobre el día mundial de la educación ambiental</a>
+   </div>
+
+   <!-- ingeniería -->
+   <div id="ingenieria" class="seccion">
+      <h2>Día Mundial de la Ingeniería para el Desarrollo Sostenible</h2>
+      <img src="https://www.prensa-latina.cu/wp-content/uploads/2024/03/ingenieria-para-el-Desarrollo-Sostenible-1.jpeg" alt="ingenieria sostenible" width="360" style="float:left; margin-left:15px; margin-bottom:10px;">
+      <p style="text-align:right;">Se celebra el <strong>4 de marzo</strong>. Fue instituido por la UNESCO en 2019 para
+         destacar el papel fundamental de la ingeniería en la consecución de los Objetivos de
+         Desarrollo Sostenible. Tiene el propósito de esta jornada es destacar la importancia
+         de la ingeniería y la tecnología en la vida moderna, así como su papel en la mitigación
+         del cambio climático, la promoción de la infraestructura sostenible, la energía limpia y
+         el desarrollo tecnológico responsable.</p>
+      <p><strong>Acontinuación podras ver la actifidad que realizamos en equipo para poder conocer más acerca de este día...</strong></p>
+      <a href="https://drive.google.com/file/d/19i6GeJMrpS-nLnKsUL0DJlCcPubqVnlG/view" target="_blank" style="color:#099723;">"Misión sostenible"</a>
+   </div>
+
+   <!-- clima -->
+   <div id="clima" class="seccion">
+      <h2>Día Mundial del Clima</h2>
+      <p>Se celebra cada <strong>26 de marzo</strong>para concienciar sobre la importancia
+         del clima y los efectos del cambio climático en el planeta y la humanidad.
+         Busca sensibilizar a la población sobre el cambio climático y la importancia
+         de tomar medidas para reducir las emisiones de gases de efecto invernadero.</p>
+      <img src="https://econprofesionales.com/wp-content/uploads/2019/04/26-de-marzo.png" alt="día del clima" width="400" style="float:right; margin-right:15px; margin-bottom:10px;">
+      <p>Celebrar este día permite generar conciencia colectiva y motivar a gobiernos,
+         organizaciones y ciudadanos a adoptar medidas que protejan el clima y aseguren un
+         desarrollo sostenible.</p>
+      <a href="https://view.genially.com/69bc37ce4118859bb46b0860" target="_blank" style="color:#099723;">"Día Mundial del Clima"</a>
+   </div>
+
+   <!-- ods -->
+   <div id="ods" class="seccion">
+      <h2>Objetivos de Desarrollo Sostenible (ODS)</h2>
+      <p>Los 17 ODS forman el núcleo de la <strong>Agenda 2030</strong> de la ONU. Abarcan
+         desde el fin de la pobreza y el hambre cero, hasta la acción por el clima, la
+         igualdad de género y la paz mundial.</p>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.MAgZAi9ngh29NLI0HqlkZQHaHa?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Los 17 ods" width="400" style="float:right; margin-right:15px; margin-bottom:10px;">
+      <p>Los Objetivos de Desarrollo Sostenible fueron adoptados en 2015 por los Estados
+         miembros de la ONU como parte de la Agenda 2030. Su propósito es crear un futuro sostenible,
+         equilibrando las dimensiones económica, social y ambiental del desarrollo, y asegurando que nadie quede atrás.
+         Los ODS son universales, transformadores y civilizatorios, promoviendo la igualdad, la justicia y la cooperación
+         internacional. Los ODS buscan transformar el modelo tradicional de desarrollo, integrando la sostenibilidad
+         ambiental, la equidad social y el crecimiento económico. Su cumplimiento es clave para enfrentar desafíos
+         globales como la pobreza, el cambio climático, la desigualdad y la degradación ambiental, asegurando un futuro más
+         justo y sostenible para todas las personas. </p>
+      <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPq7YIc5fp30bYgjP-ohiwbRsBVhHZ5fvNUq4UR0M-7Op1YOR1se0U3gnU8boWUMuhb4TGLjJXNlJZRslySRP_zZ-KfffB70FdnEKtPmfX-Mqhw=w1920-h868?auditContext=forDisplay" alt="actividad ods" width="400" style="float:left; margin-right:15px; margin-bottom:10px;">
+      <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNrjfTWtLi3TSvY9Qlbf0N4K4n3SM4wppO8KvH0jE9EQfoRgoYDR5BamcmZzdJ8O_FliSJH6JeCXRveEl4XOeV8ULowxfczW7viPEs3IRTD-6rz=w1920-h868?auditContext=forDisplay" alt="actividad ods" width="400" style="float:left; margin-right:15px; margin-bottom:10px;">
+   </div>
+
+   <!-- tierra -->
+   <div id="tierra" class="seccion">
+      <h2>Día Mundial de la Tierra</h2>
+      <a href="https://drive.google.com/file/d/1M6BAXH7pnqNfvSHigZiWq2cmmbK431o2/view" target="_blank" style="color:#099723;">"Honremos nuestra área verde"</a>
+      <p>Se celebra el <strong>22 de abril</strong> desde 1970. Es el evento ambiental laico
+         más grande del mundo, con más de mil millones de personas participando en actividades
+         de concienciación y cuidado del planeta, tiene como objetivo rendir homenaje a nuestro
+         planeta y promover la conciencia ambiental a nivel global.</p>
+      <img src="https://th.bing.com/th/id/R.d2423c6cf2d00e67d3807cd3c3fde929?rik=yVG5gPMwQSwIiQ&riu=http%3a%2f%2fverdelatierra.com%2fwp-content%2fuploads%2f2023%2f04%2fDia-de-la-Tierra.jpg&ehk=y%2fTc7wKzTXMYR3oG9cbyS4F01iS%2fBA%2fYwI48gOtfUoM%3d&risl=&pid=ImgRaw&r=0" alt="actividad ods" width="400" style="float:left; margin-right:15px; margin-bottom:10px;">
+      <p>La celebración del Día Internacional de la Madre Tierra aspira no solo a hacer visible
+         las problemáticas ambientales, sino además a contribuir con la creación de una comunidad
+         internacional en defensa del medio ambiente, para de ese modo poder ejercer presión a
+         nivel local y regional sobre gobiernos, empresas y organismos internacionales en lo que
+         a conservacionismo y defensa del medioambiente se trata.</p>
+      <img src="https://www.iberdrola.com/documents/20125/3076232/dia-de-la-tierra-746x419.jpg/e719e505-90cc-b1c1-1b2e-04c2d67eaf2d?t=1680086050923" alt="actividad ods" width="400" style="float:center; margin-right:15px; margin-bottom:10px;">
+   </div>
+
+      <!-- reciclaje -->
+   <div id="reciclaje" class="seccion">
+      <h2>Día Mundial del reciclaje</h2>
+      <a href="https://view.genially.com/6a0e9d3543b0b3f8153455d9" target="_blank" style="color:#099723;">"El reciclaje"</a>
+      <p>Se celebra el <strong>17 de mayo</strong> desde 1970. En 2005, la UNESCO impulsó la creación
+         de un día internacional de concienciación sobre el reciclaje, entendido como el proceso que
+         permite transformar residuos en nuevas materias primas para darles un nuevo uso. El objetivo
+         principal de esta conmemoración es promover el reciclaje en la vida cotidiana y sensibilizar
+         a la población sobre la necesidad de reducir la cantidad de desechos que se generan a diario.</p>
+      <p>Este día también reconoce la labor de todas las personas que trabajan en los procesos de recogida,
+         separación y reciclaje de residuos, fundamentales para reducir el impacto ambiental de nuestras
+         actividades diarias.</p>
+      <img src="https://stl.com.uy/wp-content/uploads/2024/05/blog-24-05-17-1.png" alt="actividad ods" width="400" style="float:center; margin-right:15px; margin-bottom:10px;">
+   </div>
+
+      <!-- medio ambiente -->
+   <div id="medioambiente" class="seccion">
+      <h2>Día Mundial del medio ambiente</h2>
+      <a href="https://view.genially.com/6a0f4919a6bf047e0ddf8757" target="_blank" style="color:#099723;">"El medio ambiente"</a>
+      <p>Se celebra el <strong>5 de junio</strong> desde 1970. El Día Mundial del Medio Ambiente
+         fue establecido por la Asamblea General de las Naciones Unidas en 1972, tras la
+         Conferencia de Estocolmo sobre el Medio Humano, y se celebró por primera vez el 5
+         de junio de 1973.</p>
+      <img src="https://www.wwf.nl/globalassets/afbeeldingen/wat-wij-doen/onze-aanpak/meisje-plant-boom.jpg" alt="medio ambiente" width="400" style="float:right; margin-right:15px; margin-bottom:10px;">
+      <p>El Día Mundial del Medio Ambiente 2026 subraya la urgencia de reducir a la mitad
+         las emisiones de gases de efecto invernadero para 2030 y frenar la contaminación
+         plástica y la degradación de ecosistemas. La campaña global busca inspirar a
+         millones de personas a actuar #PorElClimaYa, demostrando que la acción colectiva
+         puede generar un futuro más sostenible y saludable para todos.</p>
+      <img src="https://th.bing.com/th/id/R.56adc667890e373f2ca494b591c5ef26?rik=u%2bI1R6WQXhqmyA&riu=http%3a%2f%2fdsvalpo.cl%2fwp-content%2fuploads%2f2022%2f06%2f3236900-1024x678.jpg&ehk=00rQiSGHSoucS8eTJ49OyCOcCOWQZwMsfmUFX4SLl9s%3d&risl=&pid=ImgRaw&r=0" alt="medio ambiente" width="400" style="float:right; margin-right:15px; margin-bottom:10px;">
+   </div>
+
+   <!-- alumno -->
+   <div id="alumno" class="seccion">
+      <h2><strong>Datos del alumno</strong></h2>
+      <br><br>
+      <style>
+         .tabla-comp { width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 1rem; }
+         .tabla-comp th { background: #870E1B; color: #fff; padding: 12px 16px; text-align: center; font-weight: bold; border: 1px solid #6a0b15; }
+         .tabla-comp th:first-child { background: #5a0912; }
+         .tabla-comp td { padding: 11px 16px; border: 1px solid #ddd; text-align: center; font-size: 14px; }
+         .tabla-comp td:first-child { font-weight: bold; text-align: left; background: #f9f9f9; }
+         .tabla-comp tr:nth-child(even) td { background: #f4f4f4; }
+         .tabla-comp tr:hover td { background: #fef0f2; }
+      </style>
+
+      <table class="tabla-comp">
+      <thead>
+      <tr>
+         <th>Nombre</th>
+         <th>Grado</th>
+         <th>Grupo</th>
+         <th>Especialidad</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+         <td>Garza Valdés Liliana</td>
+         <td>6</td>
+         <td>F</td>
+         <td>Ofimática</td>
+      </tr>
+      </tbody>
+      </table>
+   </div>
+
+   <script>
+      // IDs de cada sección en el mismo orden que los <li>
+      const secciones = ['inicio', 'educacion', 'ingenieria', 'clima', 'ods', 'tierra', 'reciclaje', 'medioambiente', 'alumno'];
+
+      function mostrar(id) {
+         // Ocultar todas las secciones
+         secciones.forEach(s => {
+            document.getElementById(s).classList.remove('visible');
+         });
+
+         // Quitar clase activo de todos los <li>
+         document.querySelectorAll('.menu1 li').forEach(li => {
+            li.classList.remove('activo');
+         });
+
+         // Mostrar la sección elegida
+         document.getElementById(id).classList.add('visible');
+
+         // Marcar el <li> correspondiente como activo
+         const indice = secciones.indexOf(id);
+         document.querySelectorAll('.menu1 li')[indice].classList.add('activo');
+      }
+   </script>
+
+</body>
+</html>
